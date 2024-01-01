@@ -13,9 +13,31 @@ class HomeView extends StatelessWidget {
         child: Column(
           children: [
             CustomAppBar(),
-            BookCard(),
+            Custom_ListView(),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class Custom_ListView extends StatelessWidget {
+  const Custom_ListView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * .25,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        physics: const BouncingScrollPhysics(),
+        itemCount: 10,
+        itemBuilder: (context, index) {
+          return const Padding(
+            padding: EdgeInsets.only(right: 8),
+            child: BookCard(),
+          );
+        },
       ),
     );
   }

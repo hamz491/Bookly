@@ -7,7 +7,7 @@ class BookCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: MediaQuery.of(context).size.height * .25,
+      height: MediaQuery.of(context).size.height * .25,
       child: AspectRatio(
         aspectRatio: 3 / 4,
         child: Container(
