@@ -1,4 +1,5 @@
 import 'package:bookly/Core/utils/Styles.dart';
+import 'package:bookly/Features/Splash/Preserntaion/view/Widgets/BestSellerListview_Item.dart';
 import 'package:bookly/Features/Splash/Preserntaion/view/Widgets/Custom_AppBar.dart';
 import 'package:bookly/Features/Splash/Preserntaion/view/Widgets/Custom_ListView.dart';
 import 'package:flutter/material.dart';
@@ -20,9 +21,10 @@ class HomeView extends StatelessWidget {
               padding: EdgeInsets.only(top: 50),
               child: Text(
                 'Best Seller',
-                style: Styles.titleMedium,
+                style: Styles.textStyle18,
               ),
             ),
+            BestSellerListView_Item(),
           ],
         ),
       ),
