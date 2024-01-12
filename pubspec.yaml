@@ -35,6 +35,7 @@ dependencies:
   flutter_svg: ^2.0.9
   font_awesome_flutter: ^10.6.0
   get: ^4.6.6
+  go_router: ^13.0.1
   google_fonts: ^6.1.0
 
 dev_dependencies:
@@ -68,7 +69,6 @@ flutter:
     - family: "gt-sectra-fine-book-webfont"
       fonts:
         - asset: "assets/fonts/gt-sectra-fine-book-webfont.woff.ttf"
-
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

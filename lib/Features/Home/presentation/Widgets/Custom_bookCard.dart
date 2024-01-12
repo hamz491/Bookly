@@ -14,7 +14,6 @@ class BookCard extends StatelessWidget {
           height: MediaQuery.of(context).size.height * .25,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16),
-            color: Colors.red,
             image: const DecorationImage(
               fit: BoxFit.fill,
               image: AssetImage(AssetsData.ktestimage),
