@@ -6,3 +6,4 @@ const kLogo = 'assets/images/Logo.svg';
 const ksectrafont = 'gt-sectra-fine-book-webfont';
 const khomeView = '/homeView';
 const kbookdetails_view = '/bookdetailsview';
+const kSearch_view = '/SearchView';
