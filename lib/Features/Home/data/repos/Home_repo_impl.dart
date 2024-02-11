@@ -1,6 +1,6 @@
 import 'package:bookly/Core/Errors/Failure.dart';
 import 'package:bookly/Core/utils/api_services.dart';
-import 'package:bookly/Features/Home/data/Models/book_model/book_model.dart';
+import 'package:bookly/Features/Home/data/Models/BookModel/book_model.dart';
 import 'package:bookly/Features/Home/data/repos/HomeRepo.dart';
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
@@ -14,11 +14,11 @@ class HomeRepo_Impl implements HomeRepo {
       var data = await service.get(
           endPoint:
               "volumes?q=subject:programming&Filtering=free-ebooks&Sorting=newest");
-      List<BookModel> Books = [];
+      List<BookModel> BooksList = [];
       for (var item in data["items"]) {
-        Books.add(BookModel.fromJson(item));
+        BooksList.add(BookModel.fromJson(item));
       }
-      return right(Books);
+      return right(BooksList);
     } catch (e) {
       if (e is DioException) {
         return left(serverFailure.fromDioException(e));

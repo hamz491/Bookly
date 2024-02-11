@@ -1,10 +1,5 @@
-import 'package:bookly/Core/utils/Styles.dart';
-import 'package:bookly/Features/Home/presentation/Widgets/Book_Details_Card.dart';
 import 'package:bookly/Features/Home/presentation/Widgets/Book_Details_Section.dart';
 import 'package:bookly/Features/Home/presentation/Widgets/Can_Also_Like_Sectoin.dart';
-import 'package:bookly/Features/Home/presentation/Widgets/Price_Card.dart';
-import 'package:bookly/Features/Home/presentation/Widgets/alsolike_list_view_builder.dart';
-import 'package:bookly/Features/Home/presentation/Widgets/book_rating.dart';
 import 'package:bookly/Features/Home/presentation/Widgets/custom_book_details_appBar.dart';
 import 'package:flutter/material.dart';
 
